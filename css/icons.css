@@ -1,0 +1,50 @@
+ /* Style all font awesome icons */
+ .fa {
+  margin: 20px;
+  padding: 17px;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #ffffff;
+  color: inherit;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #ffffff;
+  color: inherit;
+}
+
+.fa-linkedin {
+  background: #ffffff;
+  color: inherit;
+}
+
+.fa-google {
+  background: #ffffff;
+  color: inherit;
+}
+
+.fa-github {
+  background: #ffffff;
+  color: inherit;
+}
+
+.fa-youtube {
+  background: #ffffff;
+  color: inherit;
+}
