@@ -1,3 +1,24 @@
 #aboutme {
-  background-color: #dbe2ef;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#aboutme h2 {
+  color: #f73859;
+}
+
+#aboutme p {
+  font-size: small;
+  color: #464646;
+}
+
+#profile_gs {
+  height: 200px;
+  width: 200px;
+  border: 5px solid #797979;
+  border-radius: 50%;
+  margin: 30px;
+  align-self: center;
 }

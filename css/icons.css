@@ -7,6 +7,7 @@
   height: 50px;
   text-decoration: none;
   border-radius: 50%;
+  z-index: 99;
 }
 
 /* Add a hover effect if you want */
