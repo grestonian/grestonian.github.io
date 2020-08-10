@@ -1,0 +1,19 @@
+#skills {
+  background-color: #Feeeee;
+  /* margin-top: 50px; */
+  /* margin-bottom: 50px; */
+  margin: 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8; */
+}
+
+#skills-container {
+  padding: 40px 0px;
+  height: auto;
+  margin-bottom: 20px;
+  /* border-radius: 20px; */
+}
+
+#skills-container .col-12 {
+  border: solid 1px rgba(0,0,0,0.2);
+}

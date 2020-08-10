@@ -1,7 +1,6 @@
 #aboutme {
   overflow: hidden;
   background-color: #ffffff;
-  padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -10,7 +9,7 @@
 }
 
 #aboutme p {
-  font-size: small;
+  font-size: medium;
   color: #464646;
 }
 
