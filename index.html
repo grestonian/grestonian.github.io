@@ -24,6 +24,73 @@
   <title>Gurpreet Singh</title>
 </head>
 <body >    
+  
+  
+  
+  <div class="row align-items-center" id="home">
+    <div class="col-12 col-md-6 mx-auto" id="frame">
+      <h1>Hello,</h1>
+      <h1>I'm Gurpreet Singh</h1>
+      <div id="typewriter"><h5 class="cursor"></h5></div>
+      <a class="button resume-button" target="blank" href="https://abookaweekstreak.blogspot.com">Download Resume</a>
+      <a class="button blog-button" target="blank" href="https://abookaweekstreak.blogspot.com">Visit my blog</a>
+    </div>
+    <div class="col-12 col-md-6 mx-auto" id="menu">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" id="aboutme">
+            <div class="card">
+              <p class="card-title">About</p>
+              <div class="text-center">
+                <img id="profile_gs" src="img/profile_gs.png" alt="">
+              </div>
+              <p style="text-align: justify;" >I am a 4th year Computer Science Undergraduate, who is passionate about programming 
+                and finance, looking for job opportunities in challenging environments where I can 
+                utilize my programming knowledge to be the best of my abilities and 
+                contribute positively to the organization.</p>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <p class="card-title">Experience</p>
+              <p style="text-align: justify;">
+              </p>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <p class="card-title">Projects</p>
+              <p style="text-align: justify;">
+              </p>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <p class="card-title">Skills</p>
+              <p style="text-align: justify;">
+              </p>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <p class="card-title">Education</p>
+              <p style="text-align: justify;">
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
     <div class="social-connect">
       <ul class="social-links">
         <li><a href="https://www.linkedin.com/in/gurpreetsingh0719/" class="fa fa-linkedin"></a></li>
@@ -33,72 +100,9 @@
         <li><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
       </ul>
       
-    </div>
-    
+    </div>   
+  </div>
    
-    <div class="row align-items-center" id="home">
-        <div class="col-12 col-md-6 mx-auto" id="frame">
-          <h1>Hello,</h1>
-          <h1>I'm Gurpreet Singh</h1>
-          <div id="typewriter"><h5 class="cursor"></h5></div>
-          <a class="button resume-button" target="blank" href="https://abookaweekstreak.blogspot.com">Download Resume</a>
-          <a class="button blog-button" target="blank" href="https://abookaweekstreak.blogspot.com">Visit my blog</a>
-        </div>
-        <div class="col-12 col-md-6 mx-auto" id="menu">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" id="aboutme">
-                <div class="card">
-                  <p class="card-title">About</p>
-                  <div class="text-center">
-                    <img id="profile_gs" src="img/profile_gs.png" alt="">
-                  </div>
-                  <p style="text-align: justify;" >I am a 4th year Computer Science Undergraduate, who is passionate about programming 
-                    and finance, looking for job opportunities in challenging environments where I can 
-                    utilize my programming knowledge to be the best of my abilities and 
-                    contribute positively to the organization.</p>
-
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <p class="card-title">Experience</p>
-                  <p style="text-align: justify;">
-                  </p>
-
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <p class="card-title">Projects</p>
-                  <p style="text-align: justify;">
-                  </p>
-
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <p class="card-title">Skills</p>
-                  <p style="text-align: justify;">
-                  </p>
-
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <p class="card-title">Education</p>
-                  <p style="text-align: justify;">
-                  </p>
-
-                </div>
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-    
     <!-- <div class="row align-items-center page hideme" id="aboutme">
       <div class="container">
         <div class="row">
@@ -156,7 +160,7 @@
       slidesPerView: 'auto',
       loop: true,
       autoplay: {
-        delay:22500,
+        delay:2500,
         disableOnInteraction: false
       },
       coverflowEffect: {
@@ -168,6 +172,10 @@
       },
       pagination: {
         el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
     });
   </script>
