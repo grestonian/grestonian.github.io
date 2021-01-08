@@ -1,34 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 
-body {
-  background-color: #2b2e4a;
-}
 
 html{
   height:100% !important;
   width:100% !important; 
-  margin:0px; 
+  margin:0; 
   padding:0px;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 
 body{
-  height:600% !important;
+  height:100% !important;
   width:100% !important; 
   margin:0px; 
   padding:0px;
+  background-color: #2b2e4a;
 }
 
-.page {
-  min-height:16% !important; 
+#home {
+  height:100% !important;
+  width:100% !important;
+  padding: 5%;
+  color: #ffffff;
+  font-family: 'Notable', sans-serif;
 }
-
-/* .hideme
-{
-  opacity:0;
-} */
 
 .row {
   margin: 0;
@@ -44,87 +39,40 @@ body{
   text-shadow: 1px 1px 2px rgb(165, 61, 61), 0 0 25px rgb(251, 39, 68), 0 0 5px darkblue;
 }
 
-
-
-.navbar {
-  z-index: 1;
-  transition: all .5s;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.header {
-  box-shadow: 0 1px 3px rgba(255, 2, 2, 0.7);
-}
-
-.custom-nav {
-  text-shadow: lawngreen;
-  box-shadow: 5px #ffffff;
-}
-
-#home {
-  margin-top: 50px;
-  color: #ffffff;
-  /* background-color: khaki; */
-  font-family: 'Notable', sans-serif;
-  contain: content;
-}
-
 .social-connect {
+  width: 100%;
+  text-align: center;
   position: fixed;
-    right: 0px;
-    height: 100vh;
-    /* top: 8vh; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-    z-index: 99;
+  bottom: 0;
+  z-index: 99;
+}
+ul.social-links {
+  padding: 0%;
+  margin: 0;
 }
 
 .social-links li {
   list-style: none;
+  display: inline-flex;
 }
 
- /* Style the header: fixed position (always stay at the top) */
- .header {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  background-color: #f1f1f1;
-}
-
-/* The progress container (grey background) */
-.progress-container {
-  width: 100%;
-  height: 4px;
-  background: #ccc;
-}
-
-/* The progress bar (scroll indicator) */
-.progress-bar {
-  height: 4px;
-  background: #f73859;
-  width: 0%;
-}
-
-
-.resume-button {
+.button {
   margin-top: 20px;
-  padding: 15px 25px;
-  font-size: 24px;
+  padding: 10px;
+  font-size: 18px;
   text-align: center;
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #f73859;
   border: none;
   border-radius: 5px;
   box-shadow: 0 5px ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.resume-button {
+  background-color: #f73859;
+}
 .resume-button:hover {background-color: #d81838;}
 
 .resume-button:active {
@@ -133,9 +81,31 @@ body{
   transform: translateY(4px);
 }
 
+.blog-button { background-color: rgb(137, 243, 31); }
+.blog-button:hover { background-color: #5ac90b; }
+
+#frame > a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .navbar-dark .nav-item .nav-link,
 .navbar-dark .nav-item.active .nav-link,
 .navbar-dark .nav-item:focus .nav-link,
 .navbar-dark .nav-item:hover .nav-link {
         background-color: #2b2e4a;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-color: blue;
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
 }

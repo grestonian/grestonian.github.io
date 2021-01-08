@@ -14,10 +14,10 @@
 }
 
 #profile_gs {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border: 5px solid #797979;
   border-radius: 50%;
-  margin: 30px;
+  margin: 10px;
   align-self: center;
 }

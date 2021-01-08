@@ -32,3 +32,8 @@ h5.cursor::after {
 		opacity: 0;
 	}
 }
+
+.cursor {
+	margin-bottom: 20px;
+
+}
