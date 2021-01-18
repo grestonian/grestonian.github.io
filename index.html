@@ -1,183 +1,296 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Swiper library -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/typing.css">
-  <link rel="stylesheet" href="css/icons.css">
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/topbar.css">
+  <link rel="stylesheet" href="css/right-sidebar.css">
+  <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/skills.css">
-  <link rel="stylesheet" href="css/menu-icons.css">
+  <link rel="stylesheet" href="css/experience.css">
+  <link rel="stylesheet" href="css/interests.css">
+
+  <script src="https://use.fontawesome.com/437ea50e2d.js"></script>
   <title>Gurpreet Singh</title>
 </head>
-<body >    
-  
-  
-  
-  <div class="row align-items-center" id="home">
-    <div class="col-12 col-md-6 mx-auto" id="frame">
-      <h1>Hello,</h1>
-      <h1>I'm Gurpreet Singh</h1>
-      <div id="typewriter"><h5 class="cursor"></h5></div>
-      <a class="button resume-button" target="blank" href="https://abookaweekstreak.blogspot.com">Download Resume</a>
-      <a class="button blog-button" target="blank" href="https://abookaweekstreak.blogspot.com">Visit my blog</a>
+
+<body>
+  <div class="row">
+    <div class="col-2">
+      <!-- side nav -->
+      <div class="tab">
+        <div id="brand">Gurpreet Singh</div>
+        <button class="tablinks active" onclick="openCity(event, 'London')"><i class="fa fa-home"
+            aria-hidden="true"></i><span class="d-none d-lg-inline">Home</span></button>
+        <button class="tablinks"><i class="fa fa-code" aria-hidden="true"></i><span class="d-none d-lg-inline"> Projects</span></button>
+        <button class="tablinks"><i class="fa fa-cogs" aria-hidden="true"></i><span class="d-none d-lg-inline"> Skills</span></button>
+        <button class="tablinks"><i class="fa fa-industry" aria-hidden="true"></i><span class="d-none d-lg-inline"> Experience</span></button>
+        <button class="tablinks"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span class="d-none d-lg-inline"> Education</span></button>
+        <button class="tablinks"><i class="fa fa-certificate" aria-hidden="true"></i><span class="d-none d-lg-inline"> Certifications</span></button>
+        <button class="tablinks"><i class="fa fa-gamepad" aria-hidden="true"></i><span class="d-none d-lg-inline"> Interests</span></button>
+      </div>
+
+
+
+
     </div>
-    <div class="col-12 col-md-6 mx-auto" id="menu">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" id="aboutme">
-            <div class="card">
-              <p class="card-title">About</p>
-              <div class="text-center">
-                <img id="profile_gs" src="img/profile_gs.png" alt="">
+    <div class="col-10 col-md-7">
+      <div class="top-bar">
+        <div class="col-8 search">
+          <input type="text" class="searchTerm" placeholder="search??">
+          <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+
+        <div class="col-4 mode-toggle">
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fa fa-sun-o inverted"></i>
+            <i class="fa fa-moon-o inverted"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+      </div>
+      <div class="tab-content">
+        <div class="content active">
+          <div class="about-card">
+            <div class="profile-bg"></div>
+            <img class="profile-pic inverted" src="img/profile_gs.png" alt="" srcset="">
+            <div class="about-content row ">
+              <div class="col-6">
+                <h2>Gurpreet Singh</h2>
+                <p>Upcoming Software Engineer</p>
               </div>
-              <p style="text-align: justify;" >I am a 4th year Computer Science Undergraduate, who is passionate about programming 
-                and finance, looking for job opportunities in challenging environments where I can 
-                utilize my programming knowledge to be the best of my abilities and 
-                contribute positively to the organization.</p>
+              <div class="col-6">
+                <form target="blank"
+                  action="https://drive.google.com/file/d/1E8pxVteuq0GBnhg5jQMHtSMAUO87ESSX/view?usp=sharing">
+                  <button>Download Resume</button>
+                </form>
+              </div>
+              <p align="justify">I am a 4th year Computer Science Undergraduate, who is passionate about programming and
+                finance, looking for job opportunities in challenging environments where I can utilize my programming
+                and financial knowledge to be the best of my abilities and contribute positively to the organization.
+                I've worked on various projects from developing an android application to help the students of my
+                institute gain insights about the curriculum to designing a chatbot assistant to help users resolve
+                their queries related to Ubuntu OS.</p>
+                <p align="justify">Being an Automation Developer Intern, helped me gain experience about the corporate world, giving me the
+                opportunity to develop my softskills and hence, grow both personally and professionally.
+                I have experience of Java, Python, C++, Data Structures, Web Development.</p>
 
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <p class="card-title">Experience</p>
-              <p style="text-align: justify;">
-              </p>
-
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <p class="card-title">Projects</p>
-              <p style="text-align: justify;">
-              </p>
-
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <p class="card-title">Skills</p>
-              <p style="text-align: justify;">
-              </p>
-
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <p class="card-title">Education</p>
-              <p style="text-align: justify;">
-              </p>
+              <p align="justify">Apart from my technical skills, I'm currently Executive Body Member of ACM Student
+                Chapter of Punjab Engineering College and I like to play guitar and piano. </p>
 
             </div>
           </div>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+
+        <div class="content">
+          <h2>This projects section</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque,
+            cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur
+            veritatis.</p>
+        </div>
+
+        <div class="content">
+          <h6 align="right">Upskilling is in progress... These are approximations of skill level.</h6>
+          <div class="technical-skills">
+            <p>Technical Skills</p>
+            <div class="skills" style="display: flex;">
+              <div class="skill-label">HTML</div>
+              <div class="progress" style="height: 28px; width: 100%;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span>80%</span></div>
+              </div>
+            </div> 
+            <div class="skills" style="display: flex;">
+              <div class="skill-label">CSS</div>
+              <div class="progress" style="height: 28px; width: 100%;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span>80%</span></div>
+              </div>
+            </div> 
+            <div class="skills" style="display: flex;">
+              <div class="skill-label">Bootstrap</div>
+              <div class="progress" style="height: 28px; width: 100%;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 90%"><span>90%</span></div>
+              </div>
+            </div> 
+            <div class="skills" style="display: flex;">
+              <div class="skill-label">Java</div>
+              <div class="progress" style="height: 28px; width: 100%;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span>80%</span></div>
+              </div>
+            </div> 
+            <div class="skills" style="display: flex;">
+              <div class="skill-label">Python</div>
+              <div class="progress" style="height: 28px; width: 100%;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span>80%</span></div>
+              </div>
+            </div> 
+            <div class="skills" style="display: flex;">
+              <div class="skill-label">C++</div>
+              <div class="progress" style="height: 28px; width: 100%;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 90%"><span>90%</span></div>
+              </div>
+            </div> 
+            
+          </div>
+          <div class="linguistic-skills">
+            <p>Linguistic Skills</p>
+            <div class="skills" style="display: flex;">
+              <div class="skill-label">English</div>
+              <div class="progress" style="height: 28px; width: 100%;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 90%"><span>90%</span></div>
+              </div>
+            </div> 
+            <div class="skills" style="display: flex;">
+              <div class="skill-label">Hindi</div>
+              <div class="progress" style="height: 28px; width: 100%;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 90%"><span>90%</span></div>
+              </div>
+            </div> 
+            <div class="skills" style="display: flex;">
+              <div class="skill-label">Punjabi</div>
+              <div class="progress" style="height: 28px; width: 100%;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 90%"><span>90%</span></div>
+              </div>
+            </div> 
+            <div class="skills" style="display: flex;">
+              <div class="skill-label">German</div>
+              <div class="progress" style="height: 28px; width: 100%;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span>20%</span></div>
+              </div>
+            </div> 
+          </div>
+          
+        </div>
+
+        <div class="content">
+          <div class="experiences row ibm">
+            <div class="col-2"><img style="background-color: white; margin: 15px 0px; border-radius: 5px;"
+                src="img/ibm-logo.png" alt="IBM" height="75px"></div>
+            <div class="col-6">
+              <div class="row title">RPA Developer</div>
+              <div class="row job-type">Internship</div>
+              <div class="row timeline">Jan 2020 - May 2020 . 5 mos</div>
+              <div class="row location">Kolkata, West Bengal, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h2>This is Education section</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque,
+            cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur
+            veritatis.</p>
+        </div>
+
+        <div class="content">
+          <h2>This is Certifications section</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque,
+            cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur
+            veritatis.</p>
+        </div>
+
+        <div class="content">
+          <div class="interests inverted row" id="guitar">
+            <div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+              fill="currentColor" class="bi bi-speaker-fill" viewBox="0 0 16 16">
+              <path d="M9 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-2.5 6.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0z" />
+              <path
+                d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm6 4a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 7a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7z" />
+            </svg></div>
+            <div class="col-7"><span>Guitar</span></div>
+            <p>I really like to play guitar. I play both electric as well as acoustic guitar. I'll be posting my guitar
+              performance videos soon on my youtube channel -
+              Gracious Guitarist. You can visit the channel <a
+                href="https://www.youtube.com/channel/UCvinY2Kp6oFJXXczGoh4NKA"><b style="color: black;"> here</b></a>
+            </p>
+          </div>
+          <div class="interests inverted row" id="books">
+            <div class="col-1">
+              <i style="font-size: 45px;" class="fa fa-book" aria-hidden="true"></i>
+            </div>
+            
+            <div class="col-7"><span>Book Reading</span></div>
+            <p>I love reading books - both fiction and non-fiction. I've read a lot of books till now, though only
+              recently (year 2021) I've
+              started to keep track of all my reads by writing down my reading experience in my blog (that you can check
+              <a href="https://abookaweekstreak.blogspot.com"><b style="color: black;"> here</b></a>).
+            </p>
+          </div>
+          <div class="interests inverted row" id="web-dev">
+            <div class="col-1">
+              <i style="font-size: 45px;" class="fa fa-code" aria-hidden="true"></i>
+            </div>
+            
+            <div class="col-7"><span>Web Development</span></div>
+          </div>
+          <div class="interests inverted row" id="blogging">
+            <div class="col-1">
+              <i style="font-size: 45px;" class="fa fa-rss" aria-hidden="true"></i>
+            </div>
+            <div class="col-7"><span>Blogging</span></div>
+          </div>
+          <div class="interests inverted row" id="vlog">
+            <div class="col-1">
+              <i style="font-size: 45px;" class="fa fa-youtube" aria-hidden="true"></i>
+            </div>
+            <div class="col-7"><span>Youtube Videos</span></div>
+          </div>
+          <div class="interests">
+
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="social-connect">
-      <ul class="social-links">
-        <li><a href="https://www.linkedin.com/in/gurpreetsingh0719/" class="fa fa-linkedin"></a></li>
-        <li><a href="https://twitter.com/altctrlT" class="fa fa-twitter"></a></li>
-        <li><a href="singhgurpreet0719@gmail.com" class="fa fa-google"></a></li>
-        <li><a href="https://github.com/grestonian" class="fa fa-github"></a></li>
-        <li><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
-      </ul>
-      
-    </div>   
+    <div class="col-md-3">
+      <div class="side-bar">
+        <div class="social">
+          <ul class="social-links">
+            <li><a target="blank" href="https://www.blogger.com/profile/14334238591588915193"
+                class="social-btn fa fa-rss"><span>Blogspot</span></a></li>
+            <li><a target="blank" href="https://www.linkedin.com/in/gurpreetsingh0719/"
+                class="social-btn fa fa-linkedin"><span>LinkedIn</span></a></li>
+            <li><a target="blank" href="https://twitter.com/wallstreetGPS"
+                class="social-btn fa fa-twitter"><span>Twitter</span></a></li>
+            <li><a target="blank" href="singhgurpreet0719@gmail.com"
+                class="social-btn fa fa-envelope"><span>Mail</span></a></li>
+            <li><a target="blank" href="https://github.com/grestonian"
+                class="social-btn fa fa-github"><span>Github</span></a></li>
+            <li><a target="blank" href="https://www.youtube.com/channel/UC56Kdc44IRo4uHCF6OFaYjw"
+                class="social-btn fa fa-youtube"><span>Youtube</span></a></li>
+            <li><a target="blank" href="https://www.instagram.com/_.troubadour/"
+                class="social-btn fa fa-instagram"><span>Instagram</span></a></li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
   </div>
-   
-    <!-- <div class="row align-items-center page hideme" id="aboutme">
-      <div class="container">
-        <div class="row">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
 
-          <div class="col-12 text-center">
-            <img id="profile_gs" src="img/profile_gs.png" alt="">
-          </div>
-          <div class="col-12 text-justify">
-            <h2>
-              About me
-            </h2>
-            <p>
-              I am a 4th year Computer Science Undergraduate, who is passionate about programming 
-              and finance, looking for job opportunities in challenging environments where I can 
-              utilize my programming and financial knowledge to be the best of my abilities and 
-              contribute positively to the organization.
-            </p>
-
-            <p>
-              I've worked on various projects from developing an android application to help the 
-              students of my institute gain insights about the curriculum to designing a chatbot 
-              assistant to help users resolve their queries related to Ubuntu OS.
-              Being an Automation Developer Intern, helped me gain experience about the corporate 
-              world, giving me the opportunity to develop my softskills and hence, grow both 
-              personally and professionally.
-            </p>
-            <p>
-              I have experience of Java, Python, C++, Data Structures, Web Development, 
-              Financial Analysis, Financial Accounting. Apart from my technical skills, I'm 
-              currently Executive Body Member of ACM Student Chapter of Punjab Engineering College.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Popper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <!-- Swiper.js -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- Custom JS -->
   <script src="js/main.js"></script>
-  <script src="js/typing.js"></script>
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      loop: true,
-      autoplay: {
-        delay:2500,
-        disableOnInteraction: false
-      },
-      coverflowEffect: {
-        rotate: 20,
-        stretch: 0,
-        depth: 200,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
 </body>
+
 </html>

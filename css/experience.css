@@ -1,0 +1,15 @@
+.experiences {
+    height: fit-content;
+    background-color: #1e2545;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 20px 0px;
+    box-shadow: 0 4px 12px rgba(252, 209, 209, 0.13), 0 6px 10px rgba(77, 74, 74, 0.3);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
