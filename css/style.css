@@ -1,4 +1,6 @@
-* {box-sizing: border-box}
+* {
+  box-sizing: border-box;
+}
 
 html{
   height:100% !important;
@@ -14,9 +16,15 @@ body{
   margin:0px; 
   padding:0px;
   background-color: #010417;
-  color: #ffffff;
+  color: #ffffff !important;
   /* overflow-x: hidden; */
 }
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 
 .dark-mode {
   filter: invert(1) hue-rotate(180deg);
@@ -26,7 +34,3 @@ body{
   filter: invert(1) hue-rotate(180deg);
 }
 
-body> .row {
-  margin: 0;
-  height: 100%;
-}

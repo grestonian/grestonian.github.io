@@ -1,55 +1,38 @@
 .side-bar {
-    border-left: 2px solid rgba(255, 255, 255, 0.3);
     height: 100%;
     font-size:16px;
     font-weight:600;
-    padding: 30px 50px;
+    padding: 30px;
 }
-/* 
-.settings {
-	height: 75px;
-	margin-right: 0;
-} */
 
-
-a {
-	text-decoration: none;
-}
  /* Style all font awesome icons */
+/* .social {
+	display: inline;
+} */
 ul.social-links {
 	padding: 0;
 	margin: 0;
-	margin-top: 75px;
 }
-.social-links > li {
+.social-links li {
+	width: 50px;
+	display: flex;
 	background-color: #161828;
 	list-style: none;
 	margin: 15px;
-	border-radius: 10px;
 	box-shadow: 0 4px 12px rgba(252, 209, 209, 0.13), 0 6px 10px rgba(77, 74, 74, 0.3);
-
-}
-
-.social-btn > span {
-	margin-left: 30px;
-	font-size:16px;
-	font-weight:600;
-	text-align: center;
 }
 .social-btn {
-	width: 100%;
 	padding: 17px;
 	font-size: 20px;
+	width: 50px;
 	height: 50px;
-	text-decoration: none;
-	border-radius: 10px;
-	background-color: #c2c2c2;
+	background-color: #ffffff;
+	border-radius: 50%;
 }
 
 /* Add a hover effect if you want */
 .fa:hover {
 	opacity: 0.7;
-	/* text-decoration: none; */
 }
 
 /* Set a specific color for each brand */
@@ -97,5 +80,13 @@ ul.social-links {
 	/* color: linear-gradient(180deg,#405DE6, #E1306C);  */
 }
 
+@media screen  and (max-width: 767px)  {
+	.social-links li{
+		display: inline-block;
+	}
 
+	.side-bar {
+		padding: 0;
+	}
+}
 

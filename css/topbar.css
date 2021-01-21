@@ -1,45 +1,6 @@
-.top-bar {
-    height: 75px;
-    text-align: start;
-    padding:20px 30px;
+navbar {
+    background-color: #010417;
 }
-
-.search {
-    display: flex;
-    float: left;
-}
-
-.searchTerm {
-    padding: 5px 20px;
-    width: 300px;
-    height: 36px;
-    border: none;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    color: #02ba64;
-    opacity: 0.7;
-}
-
-.searchTerm:focus{
-    opacity: 0.9;
-}
-
-.searchButton {
-    width: 40px;
-    height: 36px;
-    text-align: center;
-    color: rgb(103, 30, 30);
-    background-color: #ffffff;
-    cursor: pointer;
-    font-size: 20px;
-    border: none;
-    border-top-right-radius: 10px;
-    opacity: 0.7;
-    border-bottom-right-radius: 10px;
-}
-
 .mode-toggle {
     float: right;
     align-content: flex-end;
