@@ -39,8 +39,18 @@ i {
 }
 
 #v-pills-tabContent {
+  padding: 10px;
   width: 80%;
+  height: 90vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
 }
+
+#v-pills-tabContent::-webkit-scrollbar {
+  display: none;
+}
+
 
 
 @media screen and (max-width: 900px) {
